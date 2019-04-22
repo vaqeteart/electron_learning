@@ -1,0 +1,22 @@
+{
+  "name": "electron-player",
+  "productName": "Electron示例",
+  "version": "1.0.0",
+  "description": "Electron Player Demo ",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3",
+    "package": "electron-packager ./ audioplayer --out ./build  --asar=true --icon=./assets/app128.ico"
+  },
+  "author": "ggg",
+  "dependencies": {
+    "electron": "^4.1.1",
+    "request": "^2.88.0",
+    "sqlite3": "^4.0.6"
+  },
+  "devDependencies": {
+    "electron-packager": "^13.1.1",
+    "electron-rebuild": "^1.8.4"
+  }
+}
