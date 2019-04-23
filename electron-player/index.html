@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="assets/top.css">
+  <link rel="stylesheet" href="assets/play.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/songlist.css">
+  <link rel="stylesheet" href="assets/songlist_overview.css">
+  <link rel="stylesheet" href="assets/songlrc.css">
+  <link rel="stylesheet" href="assets/wave.css">
+
+  <link rel="import" href="sections/nav.html">
+  <link rel="import" href="sections/songlist.html">
+  <link rel="import" href="sections/songlist_overview.html">
+  <link rel="import" href="sections/songlrc.html">
+</head>
+
+<body> 
+    <!-- top -->
+    <div class="top-frame">
+        <svg id="logo" class="logo"><use xlink:href="./assets/icons.svg#logo"></use></svg>
+        <input id="search" class="search"></input>
+        <svg class="search-icon"><use xlink:href="./assets/icons.svg#search-icon"></use></svg>
+        <svg id="minimize" class="max-min-close" style="right: 60px"><use xlink:href="./assets/icons.svg#minimize"></use></svg>
+        <svg id="maximize" class="max-min-close" style="right: 35px"><use xlink:href="./assets/icons.svg#maximize"></use></svg>
+        <svg id="winclose" class="max-min-close"><use xlink:href="./assets/icons.svg#close"></use></svg>
+    </div> 
+
+    <!-- left -->
+    <div class="left-frame"></div>
+
+    <!-- main -->
+    <div class="main-frame"></div>
+        
+    <!-- bottom -->
+    <div class="bottom-frame">
+        <!-- play -->
+        <div class="play-last-bg"></div>
+        <svg class="play-last"><use xlink:href="./assets/icons.svg#play-last"></use></svg>
+        <div class="play-bg"></div>
+        <svg class="play" style="opacity: 1"><use xlink:href="./assets/icons.svg#play"></use></svg>
+        <svg class="play" style="opacity: 0"><use xlink:href="./assets/icons.svg#pause"></use></svg>
+        <div class="play-next-bg"></div>
+        <svg class="play-next"><use xlink:href="./assets/icons.svg#play-next"></use></svg>
+
+        <div class="time-begin">00:00</div>
+        <div class="time-end">04:39</div>
+        <div class="time-bg">
+            <div class="time-front">
+                <div id="time-slider" style="position:absolute; left:0px; bottom:-4px;">
+                <div class="time-slider-bg"></div>
+                <svg class="time-slider"><use xlink:href="./assets/icons.svg#slider"></use></svg>
+                </div>
+            </div>
+        </div>
+        
+        <svg class="voice" style="opacity: 0"><use xlink:href="./assets/icons.svg#voice-close"></use></svg>
+        <svg class="voice" style="opacity: 1"><use xlink:href="./assets/icons.svg#voice-open"></use></svg>
+        
+        <div class="volume-bg">
+            <div class="volume-front">
+                <div id="volume-slider" style="position:absolute; bottom:-3px; opacity:0;">
+                    <div class="volume-slider-bg"></div>
+                    <svg class="volume-slider"><use xlink:href="./assets/icons.svg#slider"></use></svg>
+                </div>
+            </div>
+        </div>
+
+        <svg class="play-order" ><use xlink:href="./assets/icons.svg#play-cycle"></use>></svg>
+        <svg class="play-order" ><use xlink:href="./assets/icons.svg#play-single"></use>></svg>
+        <svg class="play-order" ><use xlink:href="./assets/icons.svg#play-random"></use>></svg>
+        <svg class="play-order" ><use xlink:href="./assets/icons.svg#play-order"></use>></svg>
+        <svg class="lyrics-btn"><use xlink:href="./assets/icons.svg#lyrics-btn"></use></svg>
+        <div class="play-list-num-bg">0</div>
+        <svg class="play-list-num"><use xlink:href="./assets/icons.svg#play-list"></use></svg>
+
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    require('./render_process/top_event')
+    require('./render_process/play_event')
+    require('./render_process/import')
+    require('./render_process/nav_event')
+    require('./render_process/songlist_event')
+    require('./render_process/songlist_overview_event')
+    require('./render_process/songlrc_event')
+</script>
+
+</html>

@@ -1,0 +1,50 @@
+<template>
+        <section id='songlist-section' class='song-list'>
+            <img class='album-img' src='./assets/album_default.png'>
+            <div class='text-songlist'>歌单</div>
+            <div class='text-songlist-name'>test song list name</div>
+            <div class='text-song-num'>歌曲数0</div>
+            <div class='text-song-play-num'>播放数0</div>
+            <img class='creator-img' src='./assets/creator_default.png'>
+            <div class='creator-name'>作者</div>
+            <div class='play-all-btn'>
+                <svg class="play-all-btn-img"><use xlink:href="./assets/icons.svg#play-icon"></use></svg>播放全部
+            </div>
+            <div class='play-all-add'>+</div>
+            <div class='collect-album'>
+                <svg class='collect-img'><use xlink:href="./assets/icons.svg#collect"></use></svg>收藏歌单
+            </div>
+            <div class='download-all'>
+                <svg class='download-all-img'><use xlink:href="./assets/icons.svg#download"></use></svg>下载全部
+            </div>
+            <div class='title-songlist title-selected'>歌曲列表</div>
+            <div class='title-comment'>评论(0)</div>
+            <div class='songlist-head-frame'>
+                <div class='songlist-head-cell songlist-head-num'></div> 
+                <div class='songlist-head-cell songlist-head-op'>操作</div>
+                <div class='songlist-head-table'>
+                    <div class='songlist-head-row'>
+                        <div class='songlist-head-cell songlist-head-title'>音乐标题</div>
+                        <div class='songlist-head-cell songlist-head-singer'>歌手</div>
+                        <div class='songlist-head-cell songlist-head-album'>专辑</div>
+                        <div class='songlist-head-cell songlist-head-time'>时长</div>
+                    </div>
+                </div>     
+            </div>
+            <div class='songlist-line' data-songid='0'>
+                <div class='songlist-line-cell songlist-line-num'>01</div>
+                <div class='songlist-line-cell songlist-line-op'>
+                    <svg class='songlist-line-heart'><use xlink:href="./assets/icons.svg#love-solid"></use></svg>
+                </div>
+                <div class='songlist-line-table'>
+                    <div class='songlist-line-row'>
+                        <div class='songlist-line-cell songlist-line-title'>未知</div>
+                        <div class='songlist-line-cell songlist-line-singer'>未知</div>
+                        <div class='songlist-line-cell songlist-line-album'>未知</div>
+                        <div class='songlist-line-cell songlist-line-time'>00:00</div>
+                    </div>
+                </div>
+            </div>   
+
+        </section>
+</template>

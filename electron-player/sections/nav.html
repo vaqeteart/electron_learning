@@ -1,0 +1,35 @@
+<template>
+    <section id='nav-section' class='nav'>
+        <div class="nav-title">
+            <div class="nav-title-text">推荐</div>
+            <div class="nav-item" id="find-music">
+                <svg class="nav-item-icon"><use xlink:href="./assets/icons.svg#find-music"></use></svg>
+                <div class="nav-item-text">发现音乐</div>
+            </div>
+        </div>
+
+        <div class="nav-title">
+            <div class="nav-title-text">我的音乐</div>
+            <div class="nav-item" id="local-music">
+                <svg class="nav-item-icon"><use xlink:href="./assets/icons.svg#local-music"></use></svg>
+                <div class="nav-item-text">本地音乐</div>
+            </div>
+        </div>
+
+        <div id="album-list" class="nav-title">
+            <div class="nav-title-text">我的歌单</div>
+            <div class="nav-item" id="my-love-music">
+                <svg class="nav-item-icon"><use xlink:href="./assets/icons.svg#love-Hollow"></use></svg>
+                <div class="nav-item-text">我喜欢的音乐</div>
+            </div>
+        </div>
+
+        <!-- playing item -->
+        <div class="nav-play-item" style="opacity: 1;">
+            <img class="nav-play-item-img" src="./assets/play_default.png" alt="图片不见了"/>
+            <img class="nav-play-item-hoverimg" src="./assets/play_hover.png" alt="图片不见了"/>
+            <div class="nav-paly-songname">未知</div>
+            <div class="nav-paly-singer">未知</div>
+        </div>
+    </section>
+</template>
